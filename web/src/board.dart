@@ -33,7 +33,7 @@ class Cell extends Component<s.Cell> {
     return true;
   }
 
-  build() {
+  updateView() {
     var classes;
     var children;
 
@@ -52,7 +52,7 @@ class Cell extends Component<s.Cell> {
       classes = const ['closed'];
     }
 
-    return vRoot(type: 'Cell', classes: classes, children: children);
+    updateRoot(vRoot(type: 'Cell', classes: classes, children: children));
   }
 }
 
@@ -60,7 +60,7 @@ class Cell extends Component<s.Cell> {
 class Board extends Component {
   final tag = 'table';
 
-  build() {
+  updateView() {
     final board = store.board;
 
     final children = [];
@@ -72,6 +72,6 @@ class Board extends Component {
       children.add(vElement('tr', children: rowChildren));
     }
 
-    return vRoot(type: 'Board', children: children);
+    updateRoot(vRoot(type: 'Board', children: children));
   }
 }

@@ -6,4 +6,5 @@ environment:
   sdk: '>=1.0.0 <2.0.0'
 dependencies:
   browser: any
-  uix: any
+  uix:
+    git: git://github.com/localvoid/uix.git

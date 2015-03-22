@@ -10,53 +10,53 @@ body {
 }
 
 .MineSweeper {
-	text-align: center;
-	background-color: #bcbcbc;
-	border: 5px solid #585858;
+  text-align: center;
+  background-color: #bcbcbc;
+  border: 5px solid #585858;
   padding: 5px;
-	border-radius: 2px;
+  border-radius: 2px;
   display: inline-block;
 }
 
 .Board {
-	border-spacing: 1px;
+  border-spacing: 1px;
   font-family: 'Roboto', sans-serif;
 }
 
 .Cell {
-	box-sizing: border-box;
-	border-radius: 2px;
-  line-height: 22px;
-	width: 24px;
-	height: 24px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  line-height: 24px;
+  width: 24px;
+  height: 24px;
+  padding: 1px;
   user-select: none;
   -webkit-user-select: none;
   cursor: pointer;
 }
 
 .Cell.open {
-	background: #eee;
-	padding: 0px;
-	font-family: 'courier';
-	font-weight: bold;
+  background: #eee;
+  font-weight: bold;
 }
 
 .Cell.closed {
-	background: #ddd;
+  background: #ddd;
 }
 
 .Cell:hover {
-	border: 1px dashed #333;
+  padding: 0;
+  border: 1px dashed #333;
 }
 
 .Cell.mine {
-	background-image: url('/images/mine.svg');
+  background-image: url('/images/mine.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .Cell.flag {
-	background-image: url('/images/flag.svg');
+  background-image: url('/images/flag.svg');
   background-position: center;
   background-repeat: no-repeat;
 }

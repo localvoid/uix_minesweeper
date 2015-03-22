@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// 2015-03-19T12:04:22.660Z
+// 2015-03-22T09:48:00.414Z
 
 part of app.src.ui.component.board;
 
@@ -10,6 +10,7 @@ part of app.src.ui.component.board;
 
 Cell createCell([s.Cell data]) {
   final r = new Cell()..data = data;
+  r.init();
   return r;
 }
 VNode vCell({s.Cell data, Object key, String type, Map<String, String> attrs,
@@ -31,6 +32,7 @@ VNode vCell({s.Cell data, Object key, String type, Map<String, String> attrs,
 
 Board createBoard([dynamic data]) {
   final r = new Board()..data = data;
+  r.init();
   return r;
 }
 VNode vBoard({dynamic data, Object key, String type, Map<String, String> attrs,

@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.MineSweeper {
+  text-align: center;
+  background-color: #bcbcbc;
+  border: 5px solid #585858;
+  padding: 5px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.Board {
+  border-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.Cell {
+  box-sizing: border-box;
+  border-radius: 2px;
+  line-height: 24px;
+  width: 24px;
+  height: 24px;
+  padding: 1px;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+.Cell.open {
+  background: #eee;
+  font-weight: bold;
+}
+
+.Cell.closed {
+  background: #ddd;
+}
+
+.Cell:hover {
+  padding: 0;
+  border: 1px dashed #333;
+}
+
+.Cell.mine {
+  background-image: url('/images/mine.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Cell.flag {
+  background-image: url('/images/flag.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}

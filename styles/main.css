@@ -50,13 +50,13 @@ body {
 }
 
 .Cell.mine {
-  background-image: url('/images/mine.svg');
+  background-image: url('../images/mine.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .Cell.flag {
-  background-image: url('/images/flag.svg');
+  background-image: url('../images/flag.svg');
   background-position: center;
   background-repeat: no-repeat;
 }

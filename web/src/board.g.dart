@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// 2015-03-22T09:48:00.414Z
+// 2015-03-22T11:19:46.696Z
 
 part of app.src.ui.component.board;
 
@@ -8,8 +8,10 @@ part of app.src.ui.component.board;
 // Target: class Cell
 // **************************************************************************
 
-Cell createCell([s.Cell data]) {
-  final r = new Cell()..data = data;
+Cell createCell([s.Cell data, Component parent]) {
+  final r = new Cell()
+    ..parent = parent
+    ..data = data;
   r.init();
   return r;
 }
@@ -30,8 +32,10 @@ VNode vCell({s.Cell data, Object key, String type, Map<String, String> attrs,
 // Target: class Board
 // **************************************************************************
 
-Board createBoard([dynamic data]) {
-  final r = new Board()..data = data;
+Board createBoard([dynamic data, Component parent]) {
+  final r = new Board()
+    ..parent = parent
+    ..data = data;
   r.init();
   return r;
 }

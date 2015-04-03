@@ -67,7 +67,7 @@ class Board extends Component {
     for (var row = 0; row < board.rows; row++) {
       final rowChildren = [];
       for (var col = 0; col < board.cols; col++) {
-        rowChildren.add(vCell(data: board.get(row, col)));
+        rowChildren.add(vComponent($Cell, data: board.get(row, col)));
       }
       children.add(vElement('tr', children: rowChildren));
     }

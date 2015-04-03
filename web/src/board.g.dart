@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// 2015-03-28T10:51:52.321Z
+// 2015-04-03T09:54:52.072Z
 
 part of app.src.ui.component.board;
 
@@ -8,43 +8,11 @@ part of app.src.ui.component.board;
 // Target: class Cell
 // **************************************************************************
 
-Cell createCell([s.Cell data, List<VNode> children, Component parent]) {
-  return new Cell()
-    ..parent = parent
-    ..data = data
-    ..children = children;
-}
-VNode vCell({s.Cell data, Object key, String type, Map<String, String> attrs,
-    Map<String, String> style, List<String> classes,
-    List<VNode> children}) => new VNode.component(createCell,
-    flags: VNode.componentFlag,
-    key: key,
-    data: data,
-    type: type,
-    attrs: attrs,
-    style: style,
-    classes: classes,
-    children: children);
+Cell $Cell() => new Cell();
 
 // **************************************************************************
 // Generator: UixGenerator
 // Target: class Board
 // **************************************************************************
 
-Board createBoard([dynamic data, List<VNode> children, Component parent]) {
-  return new Board()
-    ..parent = parent
-    ..data = data
-    ..children = children;
-}
-VNode vBoard({dynamic data, Object key, String type, Map<String, String> attrs,
-    Map<String, String> style, List<String> classes,
-    List<VNode> children}) => new VNode.component(createBoard,
-    flags: VNode.componentFlag,
-    key: key,
-    data: data,
-    type: type,
-    attrs: attrs,
-    style: style,
-    classes: classes,
-    children: children);
+Board $Board() => new Board();

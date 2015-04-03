@@ -8,6 +8,6 @@ main() {
   initEnv();
 
   scheduler.nextFrame.write().then((_) {
-    injectComponent(createBoard(), html.querySelector('.MineSweeper'));
+    injectComponent(new Board(), html.querySelector('.MineSweeper'));
   });
 }

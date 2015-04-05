@@ -6,9 +6,7 @@ import 'env.dart';
 import 'store.dart' as s;
 import 'action.dart';
 
-part 'board.g.dart';
-
-@ComponentMeta()
+$Cell() => new Cell();
 class Cell extends Component<s.Cell> {
   final tag = 'td';
 
@@ -56,7 +54,6 @@ class Cell extends Component<s.Cell> {
   }
 }
 
-@ComponentMeta()
 class Board extends Component {
   final tag = 'table';
 
